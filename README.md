@@ -41,7 +41,7 @@ This is a living document. If you spot areas that can be improved or rewritten, 
 
 ### Validation and generators
 
-Okay, so let's begin. We've just hit enter in our terminal. What now?
+Okay, so let's get started. We've just hit enter in our terminal. What now?
 
 The first thing that kubectl will do is perform some client-side validation. This ensures that requests that will _always_ fail (e.g. creating a non-supported resource or using a [malformed image name](https://github.com/kubernetes/kubernetes/blob/v1.14.0/pkg/kubectl/cmd/run/run.go#L264)) will fail fast and not be sent to kube-apiserver. This improves system performance by reducing unnecessary load.
 
